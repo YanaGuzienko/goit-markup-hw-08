@@ -1,0 +1,19 @@
+.adress-item {
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 20px;
+
+  &:not(:first-child) {
+    margin-top: 9px;
+  }
+
+  &-contacts {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: $primary-text-style;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+  }
+}

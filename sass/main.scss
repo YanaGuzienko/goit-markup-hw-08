@@ -1,0 +1,51 @@
+@import "./utils/variables";
+@import "./utils/visually-hidden";
+@import "./utils/mixins";
+@import "./base/common";
+@import "./base/container";
+
+// header //
+
+@import "./components/header";
+@import "./components/logo";
+@import "./components/pagination";
+@import "./components/header-contacts";
+@import "./components/menu-btn";
+
+// hero //
+@import "./components/hero";
+@import "./components/modal-button";
+
+// modal //
+
+@import "./components/modal";
+@import "./components/close-btn";
+@import "./components/modal-form";
+@import "./components/send-btn";
+@import "./components/checkbox";
+
+// advantages //
+
+@import "./components/advantages";
+
+// opportunities //
+
+@import "./components/opportunities";
+
+// team //
+
+@import "./components/team";
+@import "./components/team-link";
+
+// clients //
+
+@import "./components/clients";
+@import "./components/clients-link";
+
+// footer //
+
+@import "./components/footer";
+@import "./components/logo-footer";
+@import "./components/footer-contacts";
+@import "./components/footer-connect";
+@import "./components/footer-connect-us";

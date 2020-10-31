@@ -1,0 +1,24 @@
+.clients-link {
+  width: 170px;
+  height: 90px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  fill: #afb1b8;
+  border: 1px solid #afb1b8;
+  @include transition;
+
+  &:hover,
+  &:focus {
+    border-color: $active-text-color;
+  }
+
+  &-svg {
+    @include transition;
+  }
+
+  &:hover &-svg,
+  &:focus &-svg {
+    fill: $active-text-color;
+  }
+}

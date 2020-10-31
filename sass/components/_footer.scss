@@ -1,0 +1,21 @@
+.footer {
+  background-color: #2f303a;
+  height: 252px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 60px 0 60px 0;
+
+  &-flex {
+    display: flex;
+    align-items: baseline;
+
+    &-contacts {
+      flex-direction: column;
+      margin-right: 70px;
+    }
+  }
+
+  .hero & {
+    background-color: #2f303a;
+  }
+}

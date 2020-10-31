@@ -1,0 +1,29 @@
+.socials-list {
+  justify-content: space-between;
+  margin: 16px 32px 30px 32px;
+
+  &-link {
+    height: 44px;
+    width: 44px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #ffffff;
+    fill: #afb1b8;
+    @include transition;
+
+    &:hover,
+    &:focus {
+      background-color: $active-text-color;
+    }
+
+    &:hover &-svg,
+    &:focus &-svg {
+      fill: #ffffff;
+    }
+
+    &-svg {
+      @include transition;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  padding: 5px 4px 6px 4px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 50%;
+
+  &-svg {
+    width: 18px;
+    height: 18px;
+    fill: #000000;
+    @include transition;
+  }
+  &:hover &-svg,
+  &:focus &-svg {
+    fill: $active-text-color;
+  }
+}

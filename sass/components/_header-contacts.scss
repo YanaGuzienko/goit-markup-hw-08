@@ -1,0 +1,42 @@
+@media screen and (max-width: 479px) {
+  .header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0 10px 0;
+  }
+}
+
+// .header-contacts {
+//   padding: 32px 0 32px 0;
+//   margin-left: auto;
+
+//   &-link {
+//     color: $secondary-text-color;
+//     font-family: $primary-text-style;
+//     font-style: normal;
+//     font-weight: 500;
+//     font-size: 14px;
+//     line-height: 1.142;
+//     letter-spacing: 0.02em;
+//     align-items: center;
+//     fill: #757575;
+//     @include transition;
+
+//     .header-contacts &:hover,
+//     .header-contacts &:focus {
+//       fill: $active-text-color;
+//       color: $active-text-color;
+//     }
+//   }
+// }
+
+// .header-nav .contacts-tel {
+//   margin-left: 50px;
+// }
+
+// .letter-svg,
+// .tel-svg {
+//   display: inline-flex;
+//   margin-right: 10px;
+// }

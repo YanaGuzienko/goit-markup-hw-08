@@ -1,0 +1,47 @@
+.container {
+  padding: 0 15px 0 15px;
+  outline: 1px solid red;
+  border-bottom: 1px solid #ececec;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    margin: 0 auto;
+    width: 480px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .pagination-list,
+  .header-contacts {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+// .container {
+
+//   width: 1200px;
+//   margin-left: auto;
+//   margin-right: auto;
+//   padding-left: 15px;
+//   padding-right: 15px;
+
+//   .footer > & {
+//     display: flex;
+//     flex-wrap: nowrap;
+//   }
+// }

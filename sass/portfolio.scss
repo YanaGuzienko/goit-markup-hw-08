@@ -1,0 +1,30 @@
+@import "./utils/variables";
+@import "./utils/visually-hidden";
+@import "./utils/mixins";
+@import "./base/common";
+@import "./base/container";
+
+// header //
+
+@import "./components/header";
+@import "./components/logo";
+@import "./components/pagination";
+@import "./components/header-contacts";
+
+// main //
+
+@import "./components/button-menu";
+@import "./components/main";
+
+// examples //
+
+@import "./components/examples";
+@import "./components/examples-overlay";
+
+// footer //
+
+@import "./components/footer";
+@import "./components/logo-footer";
+@import "./components/footer-contacts";
+@import "./components/footer-connect";
+@import "./components/footer-connect-us";

@@ -1,0 +1,43 @@
+.pagination-link {
+  padding: 32px 0 32px 0;
+  position: relative;
+  display: block;
+
+  .pagination & {
+    color: $primary-text-color;
+    font-family: $primary-text-style;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.02em;
+    @include transition;
+  }
+
+  &:hover,
+  &:focus,
+  .color:focus,
+  .color:hover {
+    color: $active-text-color;
+    fill: $active-text-color;
+  }
+}
+.currentLink {
+  color: $active-text-color;
+}
+
+.pagination-list-underline::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background-color: $active-text-color;
+  border-radius: 2px;
+}
+
+.pagination .pagination-list + .pagination-list {
+  margin-left: 50px;
+}

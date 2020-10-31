@@ -1,0 +1,22 @@
+.modal-button {
+  font-family: inherit;
+  color: #ffffff;
+  background-color: $active-text-color;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  margin-top: 40px;
+  border-radius: 4px;
+  padding: 10px 32px 10px 32px;
+  border-color: transparent;
+  min-width: 200px;
+  cursor: pointer;
+  @include transition;
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
+}
