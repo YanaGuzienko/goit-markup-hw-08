@@ -53,7 +53,6 @@ html {
 
 .container {
   padding: 0 15px 0 15px;
-  outline: 1px solid red;
   border-bottom: 1px solid #ececec;
 }
 
@@ -67,7 +66,7 @@ html {
 }
 
 @media screen and (max-width: 767px) {
-  .pagination-list,
+  .pagination,
   .header-contacts {
     display: none;
   }
@@ -104,6 +103,19 @@ html {
   font-size: 24px;
   line-height: 1.166;
   letter-spacing: 0.03em;
+}
+
+@media screen and (max-width: 1199px) {
+  .logo-name {
+    margin-right: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo-name {
+    font-size: 26px;
+    padding: 24px 0 25px 0;
+  }
 }
 
 .pagination-link {
@@ -157,18 +169,21 @@ html {
   margin-left: 50px;
 }
 
-@media screen and (max-width: 479px) {
+.header-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 767px) {
   .header-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    padding: 10px 0 10px 0;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding: 10px 0 10px 0;
   }
 }
 
@@ -184,6 +199,8 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  cursor: pointer;
+  border: none;
 }
 
 .menu-btn-svg-menu {
@@ -198,28 +215,60 @@ html {
   display: none;
 }
 
-@media screen and (min-width: 480px) {
+.menu-btn:hover .menu-btn-svg-menu,
+.menu-btn:focus .menu-btn-svg-menu {
+  fill: #2196f3;
+}
+
+.menu-btn:hover .menu-btn-svg-close,
+.menu-btn:focus .menu-btn-svg-close {
+  fill: #2196f3;
+}
+
+@media screen and (min-width: 768px) {
   .menu-btn {
     display: none;
   }
 }
 
+.menu-modal {
+  position: absolute;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+  width: 100%;
+}
+
 .hero {
   background-color: #2f303a;
+  background-repeat: no-repeat;
+  background-position: center;
   text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 600px;
   margin-left: auto;
   margin-right: auto;
-  background-repeat: no-repeat;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../image/Opt.jpg);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/Opt.jpg);
-  background-position: center;
+}
+
+@media screen and (max-width: 767px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../image/Opt.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/Opt.jpg);
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .hero {
+    padding: 118px 0 118px 0;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../image/Opt.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/Opt.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding: 200px 0 200px 0;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../image/Opt.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/Opt.jpg);
+  }
 }
 
 .hero-title {
@@ -227,14 +276,28 @@ html {
   font-family: roboto, sans-serif;
   font-style: normal;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.363;
-  letter-spacing: 0.06em;
   text-transform: uppercase;
-  width: 696px;
-  height: 120px;
-  left: 452px;
-  top: 280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 1199px) {
+  .hero-title {
+    font-size: 26px;
+    line-height: 1.615;
+    letter-spacing: 0.06em;
+    width: 360px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.363;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
 }
 
 .modal-button {
@@ -248,6 +311,8 @@ html {
   letter-spacing: 0.06em;
   margin-top: 40px;
   border-radius: 4px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   padding: 10px 32px 10px 32px;
   border-color: transparent;
   min-width: 200px;

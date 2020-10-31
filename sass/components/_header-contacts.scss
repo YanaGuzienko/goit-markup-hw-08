@@ -1,9 +1,10 @@
-@media screen and (max-width: 479px) {
-  .header-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.header-nav {
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 767px) {
     padding: 10px 0 10px 0;
+    justify-content: space-between;
   }
 }
 

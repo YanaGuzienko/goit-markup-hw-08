@@ -6,6 +6,8 @@
   padding: 0;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+  border: none;
 
   &-svg-menu {
     display: none;
@@ -16,9 +18,19 @@
   &.is-open &-svg-close {
     display: none;
   }
+
+  &:hover &-svg-menu,
+  &:focus &-svg-menu {
+    fill: $active-text-color;
+  }
+
+  &:hover &-svg-close,
+  &:focus &-svg-close {
+    fill: $active-text-color;
+  }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .menu-btn {
     display: none;
   }
