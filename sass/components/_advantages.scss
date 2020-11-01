@@ -10,7 +10,7 @@
 
 .advantages-list-item::before {
   content: "";
-  display: inline-block;
+  display: block;
   background-repeat: no-repeat;
   background-position: center;
   background-color: #f5f4fa;
@@ -43,7 +43,7 @@
     letter-spacing: 0.03em;
 
     @media screen and (max-width: 767px) {
-      min-width: 450px;
+      width: 450px;
     }
     @media screen and (max-width: 1199px) {
       width: 354px;

@@ -1,6 +1,15 @@
 .socials-list {
-  justify-content: space-between;
-  margin: 16px 32px 30px 32px;
+  justify-content: center;
+  display: flex;
+  flex-wrap: nowrap;
+
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 24px;
+  }
+  @media screen and (min-width: 1200px) {
+    justify-content: space-between;
+    margin: 16px 32px 30px 32px;
+  }
 
   &-link {
     height: 44px;
@@ -25,5 +34,8 @@
     &-svg {
       @include transition;
     }
+  }
+  &-item:not(:last-child) {
+    margin-right: 10px;
   }
 }

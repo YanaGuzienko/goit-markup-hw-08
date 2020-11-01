@@ -57,8 +57,13 @@ html {
 
 @media screen and (min-width: 480px) {
   .container {
-    margin: 0 auto;
     width: 480px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    width: 100%;
   }
 }
 
@@ -80,6 +85,12 @@ html {
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .opportunities {
+    display: none;
   }
 }
 
