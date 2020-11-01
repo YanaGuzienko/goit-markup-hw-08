@@ -53,7 +53,6 @@ html {
 
 .container {
   padding: 0 15px 0 15px;
-  border-bottom: 1px solid #ececec;
 }
 
 @media screen and (min-width: 480px) {
@@ -86,7 +85,6 @@ html {
 
 .header {
   background-color: #ffffff;
-  border-bottom: 1px solid #ececec;
 }
 
 .logo {

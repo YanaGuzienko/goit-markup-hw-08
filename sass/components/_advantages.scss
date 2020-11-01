@@ -1,9 +1,9 @@
 .advantages {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     padding: 60px 0 60px 0;
   }
 
-  @media screen and (man-width: 1199px) {
+  @media screen and (min-width: 1199px) {
     padding: 94px 0 47px 0;
   }
 }
@@ -46,14 +46,15 @@
       min-width: 450px;
     }
     @media screen and (max-width: 1199px) {
-      min-width: 354px;
+      width: 354px;
     }
-    // min-width: 270px;
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
   }
 }
 
 .advantages-list-item-title {
-  text-align: center;
   color: $primary-text-color;
   font-family: $primary-text-style;
   font-style: normal;
@@ -63,34 +64,29 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .advantages-list {
   display: flex;
   flex-wrap: wrap;
+  @media screen and (min-width: 767px) and (max-width: 1199px) {
+    & &-item:nth-child(2n + 1) {
+      margin-right: 30px;
+    }
+  }
+  @media screen and (min-width: 1199px) {
+    &-item {
+      text-align: left;
+    }
+
+    & &-item + &-item {
+      margin-left: 30px;
+    }
+  }
 }
-
-// &-list {
-//   flex-wrap: nowrap;
-
-//   &-item {
-//     text-align: left;
-//   }
-
-//   & &-item + &-item {
-//     margin-left: 30px;
-//   }
-// }
-// &-list-item-title {
-//   color: $primary-text-color;
-//   font-family: $primary-text-style;
-//   font-style: normal;
-//   font-weight: 700;
-//   font-size: 14px;
-//   line-height: 1.142;
-//   letter-spacing: 0.03em;
-//   text-transform: uppercase;
-// }
 
 .antenna::before {
   background-image: url(../image/antenna.svg);
