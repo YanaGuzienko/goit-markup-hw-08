@@ -8,36 +8,68 @@
   }
 }
 
-// .header-contacts {
-//   padding: 32px 0 32px 0;
-//   margin-left: auto;
+.header-contacts {
+  @media screen and (max-width: 1199px) {
+    margin-left: 88px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: auto;
+  }
+}
 
-//   &-link {
-//     color: $secondary-text-color;
-//     font-family: $primary-text-style;
-//     font-style: normal;
-//     font-weight: 500;
-//     font-size: 14px;
-//     line-height: 1.142;
-//     letter-spacing: 0.02em;
-//     align-items: center;
-//     fill: #757575;
-//     @include transition;
+.header-contacts-link {
+  color: $secondary-text-color;
+  font-family: $primary-text-style;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.02em;
 
-//     .header-contacts &:hover,
-//     .header-contacts &:focus {
-//       fill: $active-text-color;
-//       color: $active-text-color;
-//     }
-//   }
-// }
+  @media screen and (min-width: 767px) and (max-width: 1199px) {
+    font-size: 12px;
+    line-height: 1.166;
+    .letter-svg {
+      width: 14px;
+      height: 10px;
+      fill: #757575;
+      margin-bottom: 10px;
+      @include transition;
+    }
+    .tel-svg {
+      width: 10px;
+      height: 14px;
+      fill: #757575;
+      @include transition;
+    }
+  }
 
-// .header-nav .contacts-tel {
-//   margin-left: 50px;
-// }
+  @media screen and (min-width: 1199px) {
+    font-size: 14px;
+    line-height: 1.142;
+    @include transition;
+    align-items: center;
 
-// .letter-svg,
-// .tel-svg {
-//   display: inline-flex;
-//   margin-right: 10px;
-// }
+    .header-contacts &:hover,
+    .header-contacts &:focus {
+      fill: $active-text-color;
+      color: $active-text-color;
+    }
+    .header-contacts &:hover .letter-svg,
+    .header-contacts &:focus .letter-svg,
+    .header-contacts &:hover .tel-svg,
+    .header-contacts &:focus .tel-svg {
+      fill: $active-text-color;
+    }
+  }
+}
+
+@media screen and (min-width: 1199px) {
+  .header-nav .contacts-tel {
+    margin-left: 50px;
+  }
+}
+.letter-svg,
+.tel-svg {
+  margin-right: 10px;
+  fill: #757575;
+}

@@ -1,14 +1,13 @@
 .container {
   padding: 0 15px 0 15px;
   border-bottom: 1px solid #ececec;
+  // outline: 2px solid red;
 }
 
 @media screen and (min-width: 480px) {
   .container {
     margin: 0 auto;
     width: 480px;
-    padding-top: 10px;
-    padding-bottom: 10px;
   }
 }
 
@@ -16,6 +15,8 @@
   .pagination,
   .header-contacts {
     display: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 
