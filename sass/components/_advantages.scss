@@ -17,13 +17,15 @@
   background-size: 70px;
   border-radius: 4px;
   margin-bottom: 30px;
-  @media screen and (max-width: 480px) {
-    width: 100%;
-  }
+
   @media screen and (max-width: 767px) {
     width: 450px;
     height: 120px;
   }
+  @media screen and (max-width: 480px) {
+    width: 100%;
+  }
+
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 354px;
     height: 120px;
@@ -46,9 +48,9 @@
     letter-spacing: 0.03em;
 
     @media screen and (max-width: 767px) {
-      width: 450;
+      width: 100%;
     }
-    @media screen and (max-width: 1199px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
       width: 354px;
     }
     @media screen and (min-width: 1200px) {

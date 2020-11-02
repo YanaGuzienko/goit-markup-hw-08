@@ -811,16 +811,16 @@ html {
   margin-bottom: 30px;
 }
 
-@media screen and (max-width: 480px) {
-  .advantages-list-item::before {
-    width: 100%;
-  }
-}
-
 @media screen and (max-width: 767px) {
   .advantages-list-item::before {
     width: 450px;
     height: 120px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .advantages-list-item::before {
+    width: 100%;
   }
 }
 
@@ -854,11 +854,11 @@ html {
 
 @media screen and (max-width: 767px) {
   .advantages-list-item-text {
-    width: 450;
+    width: 100%;
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .advantages-list-item-text {
     width: 354px;
   }
