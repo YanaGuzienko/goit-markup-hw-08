@@ -1,4 +1,7 @@
 .clients {
+  &-list {
+    flex-wrap: wrap;
+  }
   &-title {
     font-family: $primary-text-style;
     font-style: normal;
@@ -14,12 +17,32 @@
       font-size: 28px;
       line-height: 1.178;
     }
+    &-item:nth-child(-n + 3) {
+      margin-bottom: 30px;
+    }
   }
   @media screen and (min-width: 1200px) {
     padding: 94px 0 94px 0;
     margin-bottom: 50px;
     font-size: 36px;
     line-height: 1.166;
+    &-list {
+      justify-content: space-between;
+    }
+    &-title {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    &-item:nth-child(2n + 1) {
+      margin-right: 30px;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    &-item:not(:nth-child(3n + 3)) {
+      margin-right: 30px;
+    }
   }
 }
 
@@ -31,6 +54,6 @@
 //   &-list {
 //     margin-top: 50px;
 //     flex-wrap: nowrap;
-//     justify-content: space-between;
+//
 //   }
 // }

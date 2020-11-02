@@ -1,6 +1,6 @@
 .container {
   padding: 0 15px 0 15px;
-  // margin: 0 auto;
+  margin: 0 auto;
   // outline: 2px solid red;
 }
 
@@ -10,18 +10,12 @@
   }
 }
 
-@media screen and (max-width: 480px) {
-  .container {
-    width: 100%;
-  }
-}
-
 @media screen and (max-width: 767px) {
   .pagination,
   .header-contacts {
     display: none;
     padding-top: 10px;
-    padding-bottom: 10px;
+    // padding-bottom: 10px;
   }
 }
 
