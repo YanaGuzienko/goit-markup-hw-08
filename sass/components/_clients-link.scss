@@ -1,13 +1,14 @@
 .clients-link {
-  @media screen and (max-width: 767px) {
-    width: 210px;
-  }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    width: 226px;
-  }
-  @media screen and (min-width: 1200px) {
-    width: 170px;
-  }
+  // @media screen and (max-width: 767px) {
+  //   width: 210px;
+  // }
+
+  // @media screen and (min-width: 768px) and (max-width: 1199px) {
+  //   width: 226px;
+  // }
+  // @media screen and (min-width: 1200px) {
+  //   width: 170px;
+  // }
   align-items: center;
   justify-content: center;
   height: 90px;
@@ -28,5 +29,20 @@
   &:hover &-svg,
   &:focus &-svg {
     fill: $active-text-color;
+  }
+}
+
+.clients-item {
+  @media screen and (max-width: 767px) {
+    width: 210px;
+  }
+  @media screen and (max-width: 480px) {
+    max-width: 40%;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 226px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 170px;
   }
 }

@@ -5,6 +5,11 @@
   font-size: 26px;
   line-height: 1.192;
 
+  @media screen and (max-width: 1199px) {
+    font-size: 24px;
+    line-height: 1.166;
+  }
+
   &-studio {
     color: #ffffff;
   }

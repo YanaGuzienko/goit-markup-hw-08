@@ -1,6 +1,6 @@
 .connect-us {
-  width: 570px;
-  height: 86px;
+  // width: 570px;
+  // height: 86px;
 
   &-title {
     font-family: $primary-text-style;
@@ -11,12 +11,13 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #ffffff;
+    margin-bottom: 20px;
   }
 }
 
 .connect-form {
-  flex-wrap: nowrap;
-  align-items: flex-end;
+  // flex-wrap: nowrap;
+  // align-items: flex-end;
 
   &-field {
     width: 358px;
@@ -24,11 +25,20 @@
     background-color: #2f303a;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
-    margin-top: 20px;
+
     margin-right: 12px;
     padding-left: 16px;
     color: #afb1b8;
     outline: none;
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 20px;
+    }
+    @media screen and (max-width: 1199px) {
+      width: 450px;
+    }
+    @media screen and (max-width: 480px) {
+      max-width: 100%;
+    }
   }
 
   &-btn {
@@ -48,14 +58,22 @@
     align-items: center;
     border: none;
     @include transition;
+    @media screen and (max-width: 1199px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @media screen and (max-width: 480px) {
+      max-width: 100%;
+    }
 
     &-text {
       margin-right: 10px;
     }
 
     &-svg {
-      width: 40px;
-      height: 40px;
+      width: 24px;
+      height: 24px;
       fill: #ffffff;
     }
   }

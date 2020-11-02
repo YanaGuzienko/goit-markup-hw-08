@@ -1,15 +1,32 @@
 .connect {
-  width: 206px;
-  height: 80px;
-  margin-right: 93px;
+  // width: 206px;
+  // height: 80px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
 
   &-list {
-    flex-wrap: nowrap;
-    margin-top: 20px;
-    justify-content: space-between;
+    justify-content: center;
+    @media screen and (min-width: 1200px) {
+      // flex-wrap: nowrap;
+      // margin-top: 20px;
+      // justify-content: space-between;
+    }
+  }
+
+  &-form {
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
   }
 }
-
+.connect-item + .connect-item {
+  margin-left: 10px;
+}
 .connect-item-link {
   border-radius: 50%;
   width: 44px;
