@@ -35,3 +35,7 @@ html {
 .active {
   color: $active-text-color;
 }
+
+body.modal-open {
+  overflow: hidden;
+}

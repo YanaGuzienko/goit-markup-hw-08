@@ -1,15 +1,32 @@
 .form-input {
-  width: 450px;
-  height: 58px;
   margin-left: auto;
   margin-right: auto;
   position: relative;
-
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    width: 370px;
+    height: 58px;
+  }
+  @media screen and (max-width: 480px) {
+    max-width: 100%;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 450px;
+    height: 58px;
+  }
   &:not(:last-child) {
     margin-bottom: 10px;
   }
 
   &-label {
+    margin-left: auto;
+    margin-right: auto;
+    width: 370px;
+    @media screen and (min-width: 1200px) {
+      width: 450px;
+    }
+    @media screen and (max-width: 480px) {
+      max-width: 100%;
+    }
     font-family: $primary-text-style;
     font-style: normal;
     font-weight: normal;
@@ -17,10 +34,14 @@
     line-height: 1.166;
     letter-spacing: 0.01em;
     color: $secondary-text-color;
-    width: 450px;
+    text-align: start;
     display: block;
 
     &-area {
+      // width: 370px;
+      // @media screen and (min-width: 1200px) {
+      //   width: 450px;
+      // }
       width: 100%;
       height: 40px;
       border: 1px solid rgba(33, 33, 33, 0.2);
@@ -38,7 +59,7 @@
     &-svg {
       position: absolute;
       top: 72%;
-      left: 12px;
+      left: 4%;
       transform: translateY(-72%);
       fill: #212121;
       @include transition;
@@ -51,10 +72,16 @@
 }
 
 .form-text {
-  width: 448px;
+  width: 370px;
   height: 138px;
   margin-left: auto;
   margin-right: auto;
+  @media screen and (min-width: 1200px) {
+    width: 448px;
+  }
+  @media screen and (max-width: 480px) {
+    max-width: 100%;
+  }
 
   &-input {
     display: inline-block;

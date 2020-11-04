@@ -2,5 +2,54 @@
   position: absolute;
   background-color: #ffffff;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+  width: 480px;
+  height: 395px;
+  top: 100%;
+  right: 13%;
+  z-index: 999;
+}
+.header {
+  position: relative;
+}
+
+// .menu-modal {
+//   position: fixed;
+//   transform: translateY(50%);
+// }
+
+// .menu-modal.is-open {
+//   transform: translateY(-50%);
+// }
+
+.header {
   width: 100%;
+  @media screen and (max-width: 767px) {
+    position: fixed;
+    top: 0;
+  }
+  @media screen and (max-width: 480px) {
+    max-width: 100%;
+  }
+}
+
+body {
+  @media screen and (max-width: 767px) {
+    padding-top: 60px;
+  }
+}
+
+.menu-modal {
+  @media screen and (min-width: 767px) {
+    display: none;
+  }
+}
+
+.menu-nav-list-link {
+  font-family: $primary-text-style;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.166;
+  letter-spacing: 0.02em;
+  color: $primary-text-color;
 }

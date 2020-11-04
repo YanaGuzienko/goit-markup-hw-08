@@ -51,6 +51,10 @@ html {
   color: #2196f3;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 .container {
   padding: 0 15px 0 15px;
   margin: 0 auto;
@@ -339,7 +343,54 @@ html {
   background-color: #ffffff;
   -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+  width: 480px;
+  height: 395px;
+  top: 100%;
+  right: 13%;
+  z-index: 999;
+}
+
+.header {
+  position: relative;
+}
+
+.header {
   width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    position: fixed;
+    top: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    padding-top: 60px;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .menu-modal {
+    display: none;
+  }
+}
+
+.menu-nav-list-link {
+  font-family: roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.166;
+  letter-spacing: 0.02em;
+  color: #212121;
 }
 
 .hero {
@@ -442,13 +493,8 @@ html {
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%) scale(1);
-          transform: translate(-50%, -50%) scale(1);
-  width: 528px;
-  height: 581px;
+  padding: 40px 40px 40px 40px;
+  text-align: center;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -461,6 +507,36 @@ html {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-transition-delay: 500ms;
           transition-delay: 500ms;
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+    width: 450px;
+    height: 609px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .modal {
+    max-width: 480px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .backdrop.is-hidden .modal {
@@ -485,9 +561,6 @@ html {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  padding-top: 40px;
-  padding-right: 40px;
-  padding-left: 40px;
   margin-bottom: 12px;
   display: inline-block;
 }
@@ -507,6 +580,7 @@ html {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-transition-delay: 0;
           transition-delay: 0;
+  overflow-y: scroll;
 }
 
 .backdrop.is-hidden {
@@ -550,11 +624,29 @@ html {
 }
 
 .form-input {
-  width: 450px;
-  height: 58px;
   margin-left: auto;
   margin-right: auto;
   position: relative;
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .form-input {
+    width: 370px;
+    height: 58px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .form-input {
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .form-input {
+    width: 450px;
+    height: 58px;
+  }
 }
 
 .form-input:not(:last-child) {
@@ -562,6 +654,9 @@ html {
 }
 
 .form-input-label {
+  margin-left: auto;
+  margin-right: auto;
+  width: 370px;
   font-family: roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -569,8 +664,20 @@ html {
   line-height: 1.166;
   letter-spacing: 0.01em;
   color: #757575;
-  width: 450px;
+  text-align: start;
   display: block;
+}
+
+@media screen and (min-width: 1200px) {
+  .form-input-label {
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .form-input-label {
+    max-width: 100%;
+  }
 }
 
 .form-input-label-area {
@@ -598,7 +705,7 @@ html {
 .form-input-label-svg {
   position: absolute;
   top: 72%;
-  left: 12px;
+  left: 4%;
   -webkit-transform: translateY(-72%);
           transform: translateY(-72%);
   fill: #212121;
@@ -617,10 +724,22 @@ html {
 }
 
 .form-text {
-  width: 448px;
+  width: 370px;
   height: 138px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .form-text {
+    width: 448px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .form-text {
+    max-width: 100%;
+  }
 }
 
 .form-text-input {
@@ -691,7 +810,7 @@ html {
 .send-btn {
   width: 200px;
   height: 50px;
-  margin: 30px 164px 0 164px;
+  margin-top: 30px;
   background: #2196f3;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -732,14 +851,22 @@ html {
   font-family: #212121;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 1.714;
+  font-size: 12px;
+  line-height: 1.166;
   letter-spacing: 0.03em;
   color: #757575;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 8px;
+  margin-right: 4px;
+}
+
+@media screen and (min-width: 1200px) {
+  .form-checkbox-lable {
+    font-size: 14px;
+    line-height: 1.714;
+    margin-right: 4px;
+  }
 }
 
 .form-checkbox-lable::before {
@@ -789,9 +916,17 @@ html {
   font-family: #2196f3;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 1.714;
   letter-spacing: 0.03em;
+  font-size: 12px;
+  line-height: 1.166;
+  letter-spacing: 0.03em;
+}
+
+@media screen and (min-width: 1200px) {
+  .form-checkbox-link {
+    font-size: 14px;
+    line-height: 1.714;
+  }
 }
 
 @media screen and (max-width: 1199px) {

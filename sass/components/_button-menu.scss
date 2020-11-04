@@ -1,9 +1,27 @@
 .button-list {
-  flex-wrap: nowrap;
+  display: flex;
   justify-content: center;
-
-  & &-item + &-item {
-    margin-left: 8px;
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    &-item:nth-child(n + 4) {
+      margin-top: 15px;
+    }
+    &-item:not(:last-child) {
+      margin-right: 8px;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 30px;
+    &-item:not(:last-child) {
+      margin-right: 8px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 34px;
+    &-item:not(:last-child) {
+      margin-right: 8px;
+    }
   }
 }
 

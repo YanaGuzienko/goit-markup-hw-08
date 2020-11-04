@@ -20,6 +20,14 @@
             ><span class="logo">Web</span>
             <span class="logo-studio"> Studio</span>
           </a>
+          <button type="button" class="menu-btn flex is-open" data-menu-button>
+            <svg class="menu-btn-svg-menu" width="24" height="16">
+              <use href="./image/symbol-defs.svg#menu-24px"></use>
+            </svg>
+            <svg class="menu-btn-svg-close" width="18" height="18">
+              <use href="./image/symbol-defs.svg#close-24px"></use>
+            </svg>
+          </button>
           <ul class="pagination list flex">
             <li class="pagination-list"><a class="pagination-link list" href="./index.html"> Студия </a></li>
             <li class="pagination-list">
@@ -30,7 +38,7 @@
             <li class="pagination-list"><a class="pagination-link list" href=""> Контакты </a></li>
           </ul>
 
-          <ul class="header-contacts list flex">
+          <ul class="header-contacts list">
             <li class="contacts-email">
               <a class="header-contacts-link list flex color" href="mailto:info@devstudio.com">
                 <svg class="letter-svg" width="16" height="12">
@@ -56,7 +64,7 @@
         <div class="container">
           <h1 class="visually-hidden">Работы</h1>
 
-          <ul class="button-list list flex">
+          <ul class="button-list list">
             <li class="button-list-item"><button class="button-menu">Все</button></li>
             <li class="button-list-item"><button class="button-menu">Веб-сайты</button></li>
             <li class="button-list-item"><button class="button-menu">Приложения</button></li>
@@ -64,7 +72,7 @@
             <li class="button-list-item"><button class="button-menu">Маркетинг</button></li>
           </ul>
 
-          <ul class="examples-list list flex">
+          <ul class="examples-list list">
             <li class="examples-list-item">
               <a class="list" href="">
                 <div class="card-img">
@@ -243,62 +251,64 @@
     </main>
     <footer class="footer">
       <div class="container footer-flex">
-        <div class="footer-flex-contacts flex">
-          <a class="logo-footer list" lang="en" aria-label="WebStudio" href="./index.html">
-            <span class="logo">Web</span> <span class="logo-footer-studio">Studio</span>
-          </a>
-          <address class="contacts-list">
-            <ul class="adress-list list">
-              <li class="adress-item adress-maps">
-                <a target="blank" href="https://goo.gl/adress-maps/3JqiF5Vw6sHjoDkk6" class="adress-item-contacts">
-                  г. Киев, пр-т Леси Украинки, 26
+        <div class="footer-flex-tablet">
+          <div class="footer-flex-contacts">
+            <a class="logo-footer list" lang="en" aria-label="WebStudio" href="./index.html">
+              <span class="logo">Web</span> <span class="logo-footer-studio">Studio</span>
+            </a>
+            <address class="contacts-list">
+              <ul class="adress-list list">
+                <li class="adress-item adress-maps">
+                  <a target="blank" href="https://goo.gl/adress-maps/3JqiF5Vw6sHjoDkk6" class="adress-item-contacts">
+                    г. Киев, пр-т Леси Украинки, 26
+                  </a>
+                </li>
+                <li class="adress-item contacts-email">
+                  <a href="mailto:info@example.com" class="header-contacts-link list"> info@example.com </a>
+                </li>
+                <li class="adress-item contacts-tel">
+                  <a href="tel:+380961111111" class="header-contacts-link list"> +38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="connect">
+            <p class="connect-us-title">присоединяйтесь</p>
+            <ul class="connect-list list flex">
+              <li class="connect-item">
+                <a class="connect-item-link flex" href="">
+                  <svg class="connect-item-link-svg">
+                    <use href="./image/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
                 </a>
               </li>
-              <li class="adress-item contacts-email">
-                <a href="mailto:info@example.com" class="header-contacts-link list"> info@example.com </a>
+              <li class="connect-item">
+                <a class="connect-item-link flex" href=""
+                  ><svg class="connect-item-link-svg">
+                    <use href="./image/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="adress-item contacts-tel">
-                <a href="tel:+380961111111" class="header-contacts-link list"> +38 096 111 11 11</a>
+              <li class="connect-item">
+                <a class="connect-item-link flex" href=""
+                  ><svg class="connect-item-link-svg">
+                    <use href="./image/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="connect-item">
+                <a class="connect-item-link flex" href=""
+                  ><svg class="connect-item-link-svg">
+                    <use href="./image/symbol-defs.svg#icon-linkedingrey"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="connect">
-          <p class="connect-us-title">присоединяйтесь</p>
-          <ul class="connect-list list flex">
-            <li class="connect-item">
-              <a class="connect-item-link flex" href="">
-                <svg class="connect-item-link-svg">
-                  <use href="./image/symbol-defs.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="connect-item">
-              <a class="connect-item-link flex" href=""
-                ><svg class="connect-item-link-svg">
-                  <use href="./image/symbol-defs.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="connect-item">
-              <a class="connect-item-link flex" href=""
-                ><svg class="connect-item-link-svg">
-                  <use href="./image/symbol-defs.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="connect-item">
-              <a class="connect-item-link flex" href=""
-                ><svg class="connect-item-link-svg">
-                  <use href="./image/symbol-defs.svg#icon-linkedingrey"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
         <div class="connect-us">
           <p class="connect-us-title">Подпишитесь на рассылку</p>
-          <form class="connect-form flex" action="#">
+          <form class="connect-form" action="#">
             <input class="connect-form-field" type="email" name="subscribe-email" placeholder="E-mail" />
             <button class="connect-form-btn flex" type="submit">
               <span class="connect-form-btn-text">Подписаться</span>
@@ -310,5 +320,7 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

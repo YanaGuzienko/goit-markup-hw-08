@@ -27,19 +27,24 @@
               <use href="./image/symbol-defs.svg#close-24px"></use>
             </svg>
           </button>
-          <!-- <div class="menu-modal">
+
+          <div class="menu-modal" data-menu>
             <nav class="menu-nav">
               <ul class="menu-nav-list list">
-                <li class="menu-nav-list-item">Студия</li>
-                <li class="menu-nav-list-item">Портфолио</li>
-                <li class="menu-nav-list-item">Контакты</li>
+                <li class="menu-nav-list-item">
+                  <a class="menu-nav-list-link list" href="./index.html">Студия</a>
+                </li>
+                <li class="menu-nav-list-item">
+                  <a class="menu-nav-list-link list" href="./portfolio.html">Портфолио</a>
+                </li>
+                <li class="menu-nav-list-item"><a class="menu-nav-list-link list" href="">Контакты</a></li>
               </ul>
               <ul class="menu-nav-contacts list">
                 <li class="menu-nav-contacts-item">info@devstudio.com</li>
                 <li class="menu-nav-contacts-item">+38 096 111 11 11</li>
               </ul>
             </nav>
-          </div> -->
+          </div>
 
           <ul class="pagination flex list">
             <li class="pagination-list">
@@ -118,19 +123,73 @@
           <h2 class="opportunities-title">Чем мы занимаемся</h2>
           <ul class="opportunities-list list flex">
             <li class="opportunities-item">
-              <img src="./image/box1.jpg" alt=" Мужчина создает проэкт" width="370" height="294" />
+              <picture>
+                <source
+                  srcset="
+                    ./image/desktop/section-doing/img-1-x1-webp-des.webp 1x,
+                    ./image/desktop/section-doing/img-1-x2-webp-des.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./image/desktop/section-doing/img-1-x1-des.jpg 1x,
+                    ./image/desktop/section-doing/img-1-x2-des.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img src="./image/desktop/section-doing/img-1-x1-des.jpg" alt=" Мужчина создает проэкт" />
+              </picture>
+
               <div class="position-title flex">
                 <p class="position-title-text">Десктопные приложения</p>
               </div>
             </li>
             <li class="opportunities-item">
-              <img src="./image/box2.jpg" alt="Женщина консультирует по телефону" width="370" height="294" />
+              <picture>
+                <source
+                  srcset="
+                    ./image/desktop/section-doing/img-2-x1-webp-des.webp 1x,
+                    ./image/desktop/section-doing/img-2-x2-webp-des.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./image/desktop/section-doing/img-2-x1-des.jpg 1x,
+                    ./image/desktop/section-doing/img-2-x2-des.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img src="./image/desktop/section-doing/img-2-x1-des.jpg" alt=" Женщина консультирует по телефону" />
+              </picture>
+
               <div class="position-title flex">
                 <p class="position-title-text">Мобильные приложения</p>
               </div>
             </li>
             <li class="opportunities-item">
-              <img src="./image/box3.jpg" alt="Женщина выбирает цвет" width="370" height="294" />
+              <picture>
+                <source
+                  srcset="
+                    ./image/desktop/section-doing/img-3-x1-webp-des.webp 1x,
+                    ./image/desktop/section-doing/img-3-x2-webp-des.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./image/desktop/section-doing/img-3-x1-des.jpg 1x,
+                    ./image/desktop/section-doing/img-3-x2-des.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img src="./image/desktop/section-doing/img-3-x1-des.jpg" alt=" Женщина выбирает цвет" />
+              </picture>
+
               <div class="position-title flex">
                 <p class="position-title-text">Дизайнерские решения</p>
               </div>
@@ -145,11 +204,25 @@
           <h2 class="team-title">Наша команда</h2>
           <ul class="team-list list">
             <li class="team-item">
-              <img
-                srcset="./image/team-img/demimg@1x.jpg 1x, ./image/team-img/demimg@2x.jpg 2x"
-                src="./image/team-img/demimg@1x.jpg"
-                alt="Фото Игорь Демьяненко"
-              />
+              <!-- <picture>
+                <source
+                  srcset="
+                    ./image/desktop/section-team/team-photo-igor-x1-webp-tab.webp 1x,
+                    ./image/desktop/section-team/team-photo-igor-x2-webp-tab.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./image/desktop/section-team/team-photo-igor-x1-webp-tab.webp 1x,
+                    ./image/desktop/section-team/team-photo-igor-x2-webp-tab.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img src="./image/team-img/team-photo-igor-x1-tab.jpg" alt="Фото Игорь Демьяненко" />
+              </picture> -->
+
               <h3 class="team-item-name">Игорь Демьяненко</h3>
               <p class="team-item-position" lang="en">Product Designer</p>
 
@@ -428,7 +501,7 @@
         </div>
       </div>
     </footer>
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <div class="modal-active">
           <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
@@ -480,6 +553,7 @@
             <button type="submit" class="send-btn">Отправить</button>
           </form>
         </div>
+
         <button type="button" class="close-btn" data-modal-close>
           <svg class="close-btn-svg">
             <use href="./image/symbol-defs.svg#close-btn"></use>
@@ -487,8 +561,8 @@
         </button>
       </div>
     </div>
-    <script src="./js/modal.js"></script> -->
     <script src="./js/modal.js"></script>
+    <!-- <script src="./js/modal.js"></script> -->
     <script src="./js/menu.js"></script>
   </body>
 </html>
