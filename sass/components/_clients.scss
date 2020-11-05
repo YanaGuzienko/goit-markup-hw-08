@@ -1,6 +1,7 @@
 .clients {
   &-list {
     flex-wrap: wrap;
+    justify-content: center;
   }
   &-title {
     font-family: $primary-text-style;

@@ -310,15 +310,15 @@ body.modal-open {
   border: none;
 }
 
-.menu-btn-svg-menu {
+.menu-btn-svg-close {
   display: none;
 }
 
-.menu-btn.is-open .menu-btn-svg-menu {
+.menu-btn.is-open .menu-btn-svg-close {
   display: block;
 }
 
-.menu-btn.is-open .menu-btn-svg-close {
+.menu-btn.is-open .menu-btn-svg-menu {
   display: none;
 }
 

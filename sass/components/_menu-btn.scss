@@ -9,13 +9,13 @@
   cursor: pointer;
   border: none;
 
-  &-svg-menu {
+  &-svg-close {
     display: none;
   }
-  &.is-open &-svg-menu {
+  &.is-open &-svg-close {
     display: block;
   }
-  &.is-open &-svg-close {
+  &.is-open &-svg-menu {
     display: none;
   }
 
