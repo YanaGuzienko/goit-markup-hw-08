@@ -92,8 +92,13 @@ body.modal-open {
   }
 }
 
-.header {
+header {
   background-color: #ffffff;
+}
+
+header {
+  position: relative;
+  z-index: 999;
 }
 
 .logo {
@@ -338,16 +343,19 @@ body.modal-open {
   }
 }
 
-.menu-modal {
-  position: absolute;
-  background-color: #ffffff;
-  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
-          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
-  width: 100%;
-  height: 395px;
-  top: 100%;
-  right: 0%;
-  z-index: 999;
+@media screen and (max-width: 767px) {
+  .menu-modal {
+    position: absolute;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+    width: 100%;
+    height: 395px;
+    top: 100%;
+    right: 0%;
+    display: none;
+    z-index: 999;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -356,18 +364,36 @@ body.modal-open {
   }
 }
 
-.header {
-  position: relative;
+@media screen and (min-width: 768px) {
+  .menu-modal {
+    display: none;
+  }
 }
 
 .menu-modal.is-open {
-  -webkit-transform: translateY(-100%) scale(0);
-          transform: translateY(-100%) scale(0);
+  display: block;
 }
 
-@media screen and (min-width: 767px) {
-  .menu-modal {
-    display: none;
+.header {
+  width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    position: fixed;
+    top: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    padding-top: 60px;
   }
 }
 
@@ -450,16 +476,20 @@ body.modal-open {
   fill: #2196f3;
 }
 
-.menu-nav-list-item:first-child {
+a.modal-menu-underline {
   margin-bottom: 48px;
-}
-
-.menu-nav-list-item:nth-child(2n) {
-  margin-bottom: 40px;
 }
 
 .menu-nav-list-item:last-child {
   margin-bottom: 60px;
+}
+
+.menu-bottom {
+  margin-bottom: 48px;
+}
+
+.menu-nav-list-item:not(:first-child) {
+  margin-top: 40px;
 }
 
 .menu-nav-contacts-item:first-child {

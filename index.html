@@ -19,7 +19,7 @@
           <a class="logo-name flex list" lang="en" aria-label="WebStudio" href="./index.html"
             ><span class="logo">Web</span> <span class="logo-studio"> Studio</span>
           </a>
-          <button type="button" class="menu-btn flex is-open" data-menu-button>
+          <button type="button" class="menu-btn flex" data-menu-button>
             <svg class="menu-btn-svg-menu" width="24" height="16">
               <use href="./image/symbol-defs.svg#menu-24px"></use>
             </svg>
@@ -31,7 +31,7 @@
           <div class="menu-modal" data-menu>
             <nav class="menu-nav">
               <ul class="menu-nav-list list">
-                <li class="menu-nav-list-item">
+                <li class="menu-nav-list-item menu-bottom">
                   <a class="menu-nav-list-link list modal-menu-underline" href="./index.html">
                     <span class="currentLink">Студия</span>
                   </a>
@@ -220,24 +220,54 @@
           <h2 class="team-title">Наша команда</h2>
           <ul class="team-list list">
             <li class="team-item">
-              <!-- <picture>
+              <picture>
                 <source
                   srcset="
-                    ./image/desktop/section-team/team-photo-igor-x1-webp-tab.webp 1x,
-                    ./image/desktop/section-team/team-photo-igor-x2-webp-tab.webp 2x
+                    ./image/desktop/section-team/team-photo-igor-x1-des.webp 1x,
+                    ./image/desktop/section-team/team-photo-igor-x2-des.webp 2x
                   "
                   media="(min-width: 1200px)"
                   type="image/webp"
                 />
                 <source
                   srcset="
-                    ./image/desktop/section-team/team-photo-igor-x1-webp-tab.webp 1x,
-                    ./image/desktop/section-team/team-photo-igor-x2-webp-tab.webp 2x
+                    ./image/desktop/section-team/team-photo-igor-x1-des.jpg 1x,
+                    ./image/desktop/section-team/team-photo-igor-x2-des.jpg 2x
                   "
                   media="(min-width: 1200px)"
                 />
-                <img src="./image/team-img/team-photo-igor-x1-tab.jpg" alt="Фото Игорь Демьяненко" />
-              </picture> -->
+                <source
+                  srcset="
+                    ./image/tablet/section-team/team-photo-igor-x1-tab.webp 1x,
+                    ./image/tablet/section-team/team-photo-igor-x2-tab.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./image/tablet/section-team/team-photo-igor-x1-tab.jpg 1x,
+                    ./image/tablet/section-team/team-photo-igor-x2-tab.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./image/mobile/section-team/team-photo-igor-x1-webp-mob.webp 1x,
+                    ./image/mobile/section-team/team-photo-igor-x2-webp-mob.webp 2x
+                  "
+                  media="(min-width: 320px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./image/mobile/section-team/team-photo-igor-x1-mob.jpg 1x,
+                    ./image/mobile/section-team/team-photo-igor-x2-mob.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img src="./image/mobile/section-team/team-photo-igor-x1-mob.jpg " alt="Фото Игорь Демьяненко" />
+              </picture>
 
               <h3 class="team-item-name">Игорь Демьяненко</h3>
               <p class="team-item-position" lang="en">Product Designer</p>
@@ -275,11 +305,54 @@
             </li>
 
             <li class="team-item">
-              <img
-                srcset="./image/team-img/repimg@1x.jpg 1x, ./image/team-img/repimg@2x.jpg 2x"
-                src="./image/team-img/repimg@1x.jpg"
-                alt=" Фото Ольга Репина"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./image/desktop/section-team/team-photo-olga-x1-des.webp 1x,
+                    ./image/desktop/section-team/team-photo-olga-x2-des.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./image/desktop/section-team/team-photo-olga-x1-des.jpg 1x,
+                    ./image/desktop/section-team/team-photo-olga-x2-des.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./image/tablet/section-team/team-photo-olga-x1-tab.webp 1x,
+                    ./image/tablet/section-team/team-photo-olga-x2-tab.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./image/tablet/section-team/team-photo-olga-x1-tab.jpg 1x,
+                    ./image/tablet/section-team/team-photo-olga-x2-tab.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./image/mobile/section-team/team-photo-olga-x1-webp-mob.webp 1x,
+                    ./image/mobile/section-team/team-photo-olga-x2-webp-mob.webp 2x
+                  "
+                  media="(min-width: 320px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./image/mobile/section-team/team-photo-olga-x1-mob.jpg 1x,
+                    ./image/mobile/section-team/team-photo-olga-x2-mob.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img src="./image/mobile/section-team/team-photo-olga-x1-mob.jpg " alt="Фото Ольга Репина" />
+              </picture>
               <h3 class="team-item-name">Ольга Репина</h3>
               <p class="team-item-position" lang="en">Frontend Developer</p>
               <ul class="socials-list flex list">
@@ -314,11 +387,55 @@
               </ul>
             </li>
             <li class="team-item">
-              <img
-                srcset="./image/team-img/tarimg@1x.jpg 1x, ./image/team-img/tarimg@2x.jpg 2x"
-                src="./image/team-img/tarimg@1x.jpg"
-                alt=" Фото Николай Тарасов"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./image/desktop/section-team/team-photo-nicholay-x1-des.webp 1x,
+                    ./image/desktop/section-team/team-photo-nicholay-x2-des.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./image/desktop/section-team/team-photo-nicholay-x1-des.jpg 1x,
+                    ./image/desktop/section-team/team-photo-nicholay-x2-des.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./image/tablet/section-team/team-photo-nicholay-x1-tab.webp 1x,
+                    ./image/tablet/section-team/team-photo-nicholay-x2-tab.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./image/tablet/section-team/team-photo-nicholay-x1-tab.jpg 1x,
+                    ./image/tablet/section-team/team-photo-nicholay-x2-tab.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./image/mobile/section-team/team-photo-nicholay-x1-webp-mob.webp 1x,
+                    ./image/mobile/section-team/team-photo-nicholay-x2-webp-mob.webp 2x
+                  "
+                  media="(min-width: 320px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./image/mobile/section-team/team-photo-nicholay-x1-mob.jpg 1x,
+                    ./image/mobile/section-team/team-photo-nicholay-x2-mob.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img src="./image/mobile/section-team/team-photo-nicholay-x1-mob.jpg " alt="Фото Николай Тарасов" />
+              </picture>
+
               <h3 class="team-item-name">Николай Тарасов</h3>
               <p class="team-item-position" lang="en">Marketing</p>
               <ul class="socials-list flex list">
@@ -353,11 +470,55 @@
               </ul>
             </li>
             <li class="team-item">
-              <img
-                srcset="./image/team-img/ermimg@1x.jpg 1x, ./image/team-img/ermimg@2x.jpg 2x"
-                src="./image/team-img/ermimg@1x.jpg"
-                alt=" Фото Михаил Ермаков"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./image/desktop/section-team/team-photo-michael-x1-des.webp 1x,
+                    ./image/desktop/section-team/team-photo-michael-x2-des.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./image/desktop/section-team/team-photo-michael-x1-des.jpg 1x,
+                    ./image/desktop/section-team/team-photo-michael-x2-des.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./image/tablet/section-team/team-photo-michael-x1-tab.webp 1x,
+                    ./image/tablet/section-team/team-photo-michael-x2-tab.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./image/tablet/section-team/team-photo-michael-x1-tab.jpg 1x,
+                    ./image/tablet/section-team/team-photo-michael-x2-tab.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./image/mobile/section-team/team-photo-michael-x1-webp-mob.webp 1x,
+                    ./image/mobile/section-team/team-photo-michael-x2-webp-mob.webp 2x
+                  "
+                  media="(min-width: 320px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./image/mobile/section-team/team-photo-michael-x1-mob.jpg 1x,
+                    ./image/mobile/section-team/team-photo-michael-x2-mob.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img src="./image/mobile/section-team/team-photo-michael-x1-mob.jpg " alt="Фото Михаил Ермаков" />
+              </picture>
+
               <h3 class="team-item-name">Михаил Ермаков</h3>
               <p class="team-item-position" lang="en">UI Designer</p>
               <ul class="socials-list flex list">

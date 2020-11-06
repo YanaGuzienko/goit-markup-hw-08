@@ -1,6 +1,10 @@
-.header {
+header {
   background-color: #ffffff;
   // height: 80px;
   // margin-left: auto;
   // margin-right: auto;
+}
+header {
+  position: relative;
+  z-index: 999;
 }
