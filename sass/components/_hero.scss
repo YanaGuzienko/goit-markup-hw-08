@@ -6,7 +6,6 @@
   margin-left: auto;
   margin-right: auto;
   border-top: 1px solid #ececec;
-  // max-width: 1600px;
 
   @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
     screen and (min-resolution: 192dpi) and (max-width: 767px),
@@ -47,7 +46,7 @@
       url(../image/desktop/section-hero/hero-x1-des.jpg);
     padding: 200px 0 200px 0;
     background-repeat: no-repeat;
-    background-size: cover;
+    height: 600px;
   }
 }
 
