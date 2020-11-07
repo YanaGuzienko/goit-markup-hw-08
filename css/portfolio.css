@@ -251,37 +251,44 @@ header {
   letter-spacing: 0.02em;
 }
 
+.header-contacts-link .letter-svg {
+  width: 14px;
+  height: 10px;
+  fill: #757575;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-delay: 0;
+          transition-delay: 0;
+}
+
 @media screen and (min-width: 767px) and (max-width: 1199px) {
-  .header-contacts-link {
+  .header-contacts-link .letter-svg {
     font-size: 12px;
     line-height: 1.166;
-  }
-  .header-contacts-link .letter-svg {
-    width: 14px;
-    height: 10px;
-    fill: #757575;
     margin-bottom: 10px;
-    -webkit-transition-property: all;
-    transition-property: all;
-    -webkit-transition-duration: 250ms;
-            transition-duration: 250ms;
-    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    -webkit-transition-delay: 0;
-            transition-delay: 0;
   }
+}
+
+.header-contacts-link .tel-svg {
+  fill: #757575;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-delay: 0;
+          transition-delay: 0;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1199px) {
   .header-contacts-link .tel-svg {
     width: 10px;
     height: 14px;
-    fill: #757575;
-    -webkit-transition-property: all;
-    transition-property: all;
-    -webkit-transition-duration: 250ms;
-            transition-duration: 250ms;
-    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    -webkit-transition-delay: 0;
-            transition-delay: 0;
   }
 }
 

@@ -25,21 +25,24 @@
   font-weight: 500;
   letter-spacing: 0.02em;
 
-  @media screen and (min-width: 767px) and (max-width: 1199px) {
-    font-size: 12px;
-    line-height: 1.166;
-    .letter-svg {
-      width: 14px;
-      height: 10px;
-      fill: #757575;
+  .letter-svg {
+    width: 14px;
+    height: 10px;
+    fill: #757575;
+
+    @include transition;
+    @media screen and (min-width: 767px) and (max-width: 1199px) {
+      font-size: 12px;
+      line-height: 1.166;
       margin-bottom: 10px;
-      @include transition;
     }
-    .tel-svg {
+  }
+  .tel-svg {
+    fill: #757575;
+    @include transition;
+    @media screen and (min-width: 767px) and (max-width: 1199px) {
       width: 10px;
       height: 14px;
-      fill: #757575;
-      @include transition;
     }
   }
 
