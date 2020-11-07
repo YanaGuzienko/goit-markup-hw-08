@@ -1,7 +1,8 @@
 .form-checkbox {
   margin-top: 20px;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 
   &-lable {
     font-family: $primary-text-color;

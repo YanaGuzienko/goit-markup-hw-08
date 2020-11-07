@@ -1,5 +1,6 @@
 .modal {
   padding: 40px 40px 40px 40px;
+  position: relative;
   @media screen and (min-width: 480px) and (max-width: 1199px) {
     position: absolute;
     top: 50%;
@@ -47,6 +48,8 @@
 }
 
 .backdrop {
+  z-index: 999;
+  padding: 94px 15px 94px 15px;
   position: fixed;
   top: 0;
   left: 0;

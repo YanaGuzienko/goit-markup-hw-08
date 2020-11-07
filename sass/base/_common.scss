@@ -40,6 +40,7 @@ body.modal-open {
   overflow: hidden;
 }
 body {
+  z-index: 15;
   @media screen and (max-width: 767px) {
     padding-top: 60px;
   }
