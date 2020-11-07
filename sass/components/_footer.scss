@@ -1,6 +1,5 @@
 .footer {
   background-color: #2f303a;
-  // height: 252px;
   margin-left: auto;
   margin-right: auto;
   padding: 60px 0 60px 0;
@@ -8,7 +7,6 @@
   &-flex {
     @media screen and (max-width: 767px) {
       display: block;
-
       margin: 0 auto;
     }
     @media screen and (max-width: 1199px) {

@@ -1,6 +1,4 @@
 .connect {
-  // width: 206px;
-  // height: 80px;
   @media screen and (max-width: 767px) {
     margin-bottom: 60px;
   }
@@ -11,13 +9,7 @@
 
   &-list {
     justify-content: center;
-    @media screen and (min-width: 1200px) {
-      // flex-wrap: nowrap;
-      // margin-top: 20px;
-      // justify-content: space-between;
-    }
   }
-
   &-form {
     @media screen and (min-width: 1200px) {
       display: flex;

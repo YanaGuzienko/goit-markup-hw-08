@@ -17,39 +17,9 @@
   @media screen and (min-width: 768px) {
     display: none;
   }
-}
-
-.menu-modal.is-open {
-  display: block;
-}
-
-.header {
-  width: 100%;
-  @media screen and (max-width: 767px) {
-    position: fixed;
-    top: 0;
+  &.is-open {
+    display: block;
   }
-  @media screen and (max-width: 480px) {
-    max-width: 100%;
-  }
-}
-
-body {
-  @media screen and (max-width: 767px) {
-    padding-top: 60px;
-  }
-}
-
-.menu-nav-list-link {
-  font-family: $primary-text-style;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.166;
-  letter-spacing: 0.02em;
-  color: $primary-text-color;
-  @include transition;
-  position: relative;
 }
 
 .menu-nav-contacts-svg {
@@ -71,6 +41,18 @@ body {
 .menu-nav {
   text-align: center;
   padding: 60px 0 60px 0;
+
+  &-list-link {
+    font-family: $primary-text-style;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.166;
+    letter-spacing: 0.02em;
+    color: $primary-text-color;
+    @include transition;
+    position: relative;
+  }
 }
 
 .modal-menu-underline::after {
@@ -78,7 +60,6 @@ body {
   display: block;
   width: 100%;
   top: 120%;
-  // width: 61px;
   height: 4px;
   background: $active-text-color;
   border-radius: 2px;
@@ -101,12 +82,6 @@ a.modal-menu-underline {
   margin-bottom: 48px;
 }
 
-// .menu-nav-list-item:first-child {
-//   margin-bottom: 48px;
-// }
-// .menu-nav-list-item:nth-child(2n) {
-//   margin-bottom: 40px;
-// }
 .menu-nav-list-item:last-child {
   margin-bottom: 60px;
 }
@@ -114,9 +89,7 @@ a.modal-menu-underline {
 .menu-bottom {
   margin-bottom: 48px;
 }
-// .menu-nav-list-item:not(:last-child) {
-//   margin-bottom: 40px;
-// }
+
 .menu-nav-list-item:not(:first-child) {
   margin-top: 40px;
 }

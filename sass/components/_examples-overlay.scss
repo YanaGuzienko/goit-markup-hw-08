@@ -30,3 +30,9 @@
     transform: translateY(0);
   }
 }
+
+.card-img-overlay {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
