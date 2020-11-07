@@ -12,11 +12,11 @@
     screen and (min-resolution: 192dpi) and (max-width: 767px),
     screen and (min-resolution: 2dppx) and (max-width: 767px) {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(./image/mobile/section-hero/hero-x2-mob.jpg);
+      url(../image/mobile/section-hero/hero-x2-mob.jpg);
   }
   @media screen and (min-width: 320px) and (max-width: 767px) {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(./image/mobile/section-hero/hero-x1-mob.jpg);
+      url(../image/mobile/section-hero/hero-x1-mob.jpg);
 
     background-repeat: no-repeat;
     background-size: cover;
@@ -26,25 +26,25 @@
     screen and (min-resolution: 192dpi) and (min-width: 768px),
     screen and (min-resolution: 2dppx) and (min-width: 768px) {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(./image/tablet/section-hero/hero-x2-tab.jpg);
+      url(../image/tablet/section-hero/hero-x2-tab.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 118px 0 118px 0;
   }
   @media screen and (min-width: 768px) {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(./image/tablet/section-hero/hero-x1-tab.jpg);
+      url(../image/tablet/section-hero/hero-x1-tab.jpg);
   }
 
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
     screen and (min-resolution: 192dpi) and (min-width: 1200px),
     screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(./image/desktop/section-hero/hero-x2-des.jpg);
+      url(../image/desktop/section-hero/hero-x2-des.jpg);
   }
   @media screen and (min-width: 1200px) {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(./image/desktop/section-hero/hero-x1-des.jpg);
+      url(../image/desktop/section-hero/hero-x1-des.jpg);
     padding: 200px 0 200px 0;
     background-repeat: no-repeat;
     background-size: cover;
