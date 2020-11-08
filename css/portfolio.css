@@ -230,7 +230,7 @@ header {
 
 @media screen and (max-width: 1199px) {
   .header-contacts {
-    margin-left: 88px;
+    margin-left: 84px;
   }
 }
 
@@ -625,8 +625,6 @@ a.modal-menu-underline {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-right: -30px;
-    margin-bottom: -30px;
   }
 }
 
@@ -643,26 +641,20 @@ a.modal-menu-underline {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .examples-list-item {
+  .examples-list-item:nth-child(2n + 1) {
     margin-right: 30px;
-    margin-bottom: 30px;
-    -ms-flex-preferred-size: calc(100% / 2 - 30px);
-        flex-basis: calc(100% / 2 - 30px);
   }
-  .examples-list-item:nth-child(2n) {
-    margin-right: 0;
+  .examples-list-item:not(:nth-last-of-type(-n + 2)) {
+    margin-bottom: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .examples-list-item {
+  .examples-list-item:not(:nth-child(3n)) {
     margin-right: 30px;
-    margin-bottom: 30px;
-    -ms-flex-preferred-size: calc((100% - 3 * 30px) / 3);
-        flex-basis: calc((100% - 3 * 30px) / 3);
   }
-  .examples-list-item:nth-child(3n) {
-    margin-right: 0;
+  .examples-list-item:not(:nth-last-of-type(-n + 3)) {
+    margin-bottom: 30px;
   }
 }
 
@@ -675,7 +667,7 @@ a.modal-menu-underline {
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
-  padding: 20px 23px 20px 23px;
+  padding: 20px 24px 20px 24px;
 }
 
 @media screen and (max-width: 767px) {
