@@ -124,7 +124,7 @@ header {
 
 @media screen and (max-width: 480px) {
   .header {
-    max-width: 100%;
+    max-width: 480px;
   }
 }
 
@@ -608,8 +608,6 @@ a.modal-menu-underline {
 @media screen and (max-width: 1199px) {
   .main {
     padding: 60px 0 60px 0;
-    margin-left: 0;
-    margin-right: 0;
   }
 }
 

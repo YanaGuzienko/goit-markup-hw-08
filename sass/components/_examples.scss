@@ -38,6 +38,7 @@
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   padding: 20px 23px 20px 23px;
+  // box-sizing: content-box;
   @media screen and (max-width: 767px) {
     margin-bottom: 30px;
   }
