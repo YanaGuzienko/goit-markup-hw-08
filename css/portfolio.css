@@ -641,6 +641,9 @@ a.modal-menu-underline {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .examples-list-item {
+    max-width: 354px;
+  }
   .examples-list-item:nth-child(2n + 1) {
     margin-right: 30px;
   }
