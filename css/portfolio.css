@@ -608,6 +608,8 @@ a.modal-menu-underline {
 @media screen and (max-width: 1199px) {
   .main {
     padding: 60px 0 60px 0;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -675,7 +677,7 @@ a.modal-menu-underline {
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
-  padding: 20px 24px 20px 24px;
+  padding: 20px 23px 20px 23px;
 }
 
 @media screen and (max-width: 767px) {
@@ -960,7 +962,6 @@ a.modal-menu-underline {
   background-color: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
-  margin-right: 12px;
   padding-left: 16px;
   color: #afb1b8;
   outline: none;
@@ -981,6 +982,12 @@ a.modal-menu-underline {
 @media screen and (max-width: 480px) {
   .connect-form-field {
     max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .connect-form-field {
+    margin-right: 12px;
   }
 }
 

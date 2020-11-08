@@ -1478,6 +1478,16 @@ a.modal-menu-underline {
   margin-right: 10px;
 }
 
+.clients {
+  padding: 60px 0 60px 0;
+}
+
+@media screen and (min-width: 1199px) {
+  .clients {
+    padding: 94px 0 94px 0;
+  }
+}
+
 .clients-list {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -1493,26 +1503,13 @@ a.modal-menu-underline {
   text-align: center;
   letter-spacing: 0.03em;
   text-align: center;
-}
-
-@media screen and (max-width: 1199px) {
-  .clients {
-    padding: 60px 0 60px 0;
-  }
-  .clients-title {
-    margin-bottom: 30px;
-    font-size: 28px;
-    line-height: 1.178;
-  }
-  .clients-item:nth-child(-n + 3) {
-    margin-bottom: 30px;
-  }
+  font-size: 28px;
+  line-height: 1.178;
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 1200px) {
-  .clients {
-    padding: 94px 0 94px 0;
-    margin-bottom: 50px;
+  .clients-title {
     font-size: 36px;
     line-height: 1.166;
   }
@@ -1522,6 +1519,12 @@ a.modal-menu-underline {
             justify-content: space-between;
   }
   .clients-title {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .clients-item:nth-child(-n + 3) {
     margin-bottom: 30px;
   }
 }
@@ -1810,7 +1813,6 @@ a.modal-menu-underline {
   background-color: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
-  margin-right: 12px;
   padding-left: 16px;
   color: #afb1b8;
   outline: none;
@@ -1831,6 +1833,12 @@ a.modal-menu-underline {
 @media screen and (max-width: 480px) {
   .connect-form-field {
     max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .connect-form-field {
+    margin-right: 12px;
   }
 }
 
